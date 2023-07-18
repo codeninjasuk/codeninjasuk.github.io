@@ -1,0 +1,14 @@
+# main links
+main:
+  - title: "About"
+    url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "Programmes"
+    url: /year-archive/
+  - title: "Camps"
+    url: /year-archive/
+  - title: "Gallery"
+    url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
