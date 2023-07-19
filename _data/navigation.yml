@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Programmes"
-    url: /year-archive/
+    url: /programmes/
   - title: "Camps"
-    url: /year-archive/
+    url: /camps/
+  - title: "About"
+    url: https://codeninjas.com
   - title: "Gallery"
     url: /year-archive/
   # - title: "Sample Collections"
