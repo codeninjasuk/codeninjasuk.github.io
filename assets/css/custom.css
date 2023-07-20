@@ -73,5 +73,16 @@
 }
 
 .btn:visited{
-    color: white;
+    color: inherit;
+}
+
+.w3-petite-caps{
+    font-variant: petite-caps;
+}
+
+.masthead{
+    position: sticky; top: 0;
+    border: none;
+    background: white;
+    box-shadow: 1px 1px 10px rgb(78, 78, 78);
 }

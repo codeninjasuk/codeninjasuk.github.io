@@ -3,42 +3,58 @@ title: Camps
 layout: default
 permalink: /camps/
 w3: true
+
+camps:
+  - name: Stopmotion Animation
+    img: https://img.icons8.com/?size=512&id=NDoZ1UbUuS7c&format=png
+    link: /camps/stopmotion-animation/
+    dates: 25th, 26th July
+    youtubeid: 5Zs7vqM8t24
+  - name: Moviemaking with Minecraft
+    img: https://img.icons8.com/?size=512x&id=nQVd58awWcQA&format=gif
+    link: /camps/moviemaking-with-minecraft/
+    dates: 1st, 2nd August
+    youtubeid: UMKng76YFq4
+  - name: Become a Youtuber
+    img: https://img.icons8.com/?size=512x&id=qdWsFiGwz7NW&format=gif
+    link: /camps/become-a-youtuber/
+    dates: 8th, 9th August
+    youtubeid: A5oDCEHdOpM
+  - name: Roblox Development
+    img: https://img.icons8.com/?size=512x&id=113741&format=png
+    link: /camps/roblox-development/
+    dates: 15th, 16th August
+    youtubeid: ANL0Jz7Yt2c
 ---
 <div class="w3-content" style="max-width:1100px">
 
 
 <div class="w3-row w3-container text-center">
-    <div class="w3-center w3-padding-64">
-      <h2 class="w3-center w3-bolder" style="font-weight: 1000;">CODE NINJAS</h2>
-
+    <div class="w3-center w3-padding-32">
+        <img src="/assets/img/camp-program.png" class="w3-round w3-image" width="200" height="200">
+        <h2 class="w3-text-right w3-bolder" style="font-weight: 1000;">CODE NINJAS<span class="display-4 regicon">®</span></h2>
         <h1 class="w3-center w3-jumbo w3-bolder" style="font-weight: 1000;font-size:8vw;;"><span style="color:teal">CAMPS</span></h1>
+        <p class="w3-padding-16 w3-large">Our camps offer an immersive environment for kids to explore and develop new skills, gain confidence, and have fun with friends. From coding and game building, to STEM and robotics - it's an unforgettable experience!</p>
     </div>
 
-    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-      <img src="https://img.icons8.com/?size=512&id=NDoZ1UbUuS7c&format=png" width="100px" alt="">
-      <h3>Stopmotion Animation</h3>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    {% for camp in page.camps %}
+    <div class="w3-col l6 m6 w3-container w3-padding-32">
+      <img src="{{camp.img}}" width="100px" alt="{{camp.name}}">
+      <h3 class="w3-bolder w3-petite-caps">{{camp.name}}</h3>
+      <div class="w3-margin">
+        {{camp.dates}}
+      </div>
+      <a class="btn btn-success" href="{{camp.link}}">Learn More</a> <button class="btn btn-success" onclick="document.getElementsByName('{{camp.name}}')[0].style.display='block'" href="{{camp.link}}"><i class="fa fa-video"></i></button>
+      <div name="{{camp.name}}" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementsByName('{{camp.name}}')[0].style.display='none'"
+            class="w3-button w3-display-topright"><i class="fa fa-times"></i></span>
+            <p>{{camp.name}}</p>
+            <iframe width="420" height="315" style="width: 100%;" src="https://www.youtube-nocookie.com/embed/{{camp.youtubeid}}?autoplay=1&controls=0&modestbranding=1&showinfo=0&rel=0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="w3-col l3 m6  w3-container w3-padding-16">
-        <img src="https://img.icons8.com/?size=512x&id=nQVd58awWcQA&format=gif" width="100px" alt="">
-        <h3>Moviemaking with Minecraft</h3>
-        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    </div>
-
-    <div class="w3-col l3 m6  w3-container w3-padding-16">
-      <img src="https://img.icons8.com/?size=512x&id=qdWsFiGwz7NW&format=gif" width="100px" alt="">
-      <h3>Become a Youtuber</h3>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    </div>
-
-    
-
-    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-      <img src="https://img.icons8.com/?size=512x&id=113741&format=png" width="100px" alt="">
-      <h3>Roblox Development</h3>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    </div>
-
-    
+    {% endfor %}    
   </div>
