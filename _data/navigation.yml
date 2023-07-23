@@ -5,7 +5,7 @@ main:
   - title: "Camps"
     url: /camps/
   - title: "About"
-    url: https://codeninjas.com
+    url: /about/
   - title: "Showcase"
     url: https://showcase.codeninjaslangley.co.uk
   # - title: "Sample Collections"
