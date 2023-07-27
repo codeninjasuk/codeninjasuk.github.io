@@ -160,6 +160,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/codeninjaslangley"
+    - label: "Privacy Policy"
+      # icon: "fab fa-fw fa-instagram"
+      url: "https://codeninjaslangley.co.uk/privacy-policy/"
 
 
 # Reading Files
