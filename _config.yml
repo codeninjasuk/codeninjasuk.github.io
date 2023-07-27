@@ -101,6 +101,7 @@ analytics:
     tracking_id          :
     anonymize_ip         : # true, false (default)
 
+ganalytics: G-757Y2SND4F
 
 # Site Author
 author:
@@ -112,13 +113,13 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:langley@codeninjas.com"
+      url: "mailto:langley@codeninjas.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://codeninjas.com"
+      url: "https://codeninjas.com"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      icon: "fa fa-fw fa-twitter-square"
+      url: "https://twitter.com/"
     # - label: "Facebook"
     #   icon: "fab fa-fw fa-facebook-square"
     #   # url: "https://facebook.com/"
@@ -127,23 +128,24 @@ author:
     #   # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/codeninjaslangley"
+      url: "https://instagram.com/codeninjaslangley"
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-twitter"
       # url:
     - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+      icon: "fab fa-fw fa-facebook"
+      url: "https://www.facebook.com/CodeNinjasLangley"
 
     - label: "Code Ninjas"
-      icon: "fab fa-fw fa-globe"
+      icon: "fa fa-fw fa-globe"
       url: "https://codeninjas.com"
     
-    - label: "Code Ninjas Langley"
-      icon: "fab fa-fw fa-youtube-play"
+    - label: "YouTube Channel"
+      icon: "fab fa-fw fa-youtube"
       url: "https://www.youtube.com/channel/UC_TJJk5_k-uc40hqWIViOAQ"
       # url:
     # - label: "GitHub"
@@ -157,7 +159,7 @@ footer:
     #   # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://www.instagram.com/codeninjaslangley"
 
 
 # Reading Files
