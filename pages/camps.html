@@ -10,19 +10,22 @@ camps:
     link: /camps/stopmotion-animation/
     dates: 25th, 26th July
     youtubeid: 5Zs7vqM8t24
+    ended: true
   - name: Moviemaking with Minecraft
     img: https://img.icons8.com/?size=512x&id=nQVd58awWcQA&format=gif
     link: /camps/moviemaking-with-minecraft/
+    <!-- link: https://www.codeninjas.co.uk/langley-brk-uk/camps/become-a-youtuber -->
     dates: 1st, 2nd August
     youtubeid: UMKng76YFq4
+    ended: true
   - name: Become a Youtuber
     img: https://img.icons8.com/?size=512x&id=qdWsFiGwz7NW&format=gif
-    link: /camps/become-a-youtuber/
+    link: https://www.codeninjas.co.uk/langley-brk-uk/camps/become-a-youtuber
     dates: 8th, 9th August
     youtubeid: A5oDCEHdOpM
   - name: Roblox Development
     img: https://img.icons8.com/?size=512x&id=113741&format=png
-    link: /camps/roblox-development/
+    link: https://www.codeninjas.co.uk/langley-brk-uk/camps/intro-to-roblox-development
     dates: 15th, 16th August
     youtubeid: ANL0Jz7Yt2c
 ---
@@ -44,7 +47,11 @@ camps:
       <div class="w3-margin">
         {{camp.dates}}
       </div>
+      {% if camp.ended %}
+        <p class="w3-text-red">CAMP CONCLUDED</p>
+      {% endif %}
       <a class="btn btn-success" href="{{camp.link}}">Learn More</a> <button class="btn btn-success" onclick="document.getElementsByName('{{camp.name}}')[0].style.display='block'" href="{{camp.link}}"><i class="fa fa-video"></i></button>
+     
       <div name="{{camp.name}}" class="w3-modal">
         <div class="w3-modal-content">
           <div class="w3-container">
