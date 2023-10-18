@@ -1,7 +1,16 @@
+@font-face {
+    font-family: 'azosans';
+    src: url('/assets/azosans.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     /* font-family: 'Oxygen', sans-serif; */
-    font-family:"azo-sans-web",serif;
+    font-family: 'azosans';
 }
+
+
 
 .video-wrap {
     position: relative;
@@ -35,7 +44,7 @@
 .btn{
     display: inline-block;
     font-weight: 800;
-    color: white;
+    /* color: white; */
     text-align: center;
     vertical-align: middle;
     user-select: none;
@@ -83,6 +92,7 @@
 .masthead{
     position: sticky; top: 0;
     border: none;
-    background: white;
+    /* background: white; */
+    background: #252a34;
     box-shadow: 1px 1px 10px rgb(78, 78, 78);
 }
